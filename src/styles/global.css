@@ -1,0 +1,42 @@
+/* filepath: c:\Users\nolan\OneDrive\Bureau\DailyLessons\WebInterface\panelAdmin\src\styles\global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles globaux personnalisés */
+html, body {
+  @apply h-full;
+}
+
+body {
+  @apply bg-gradient-primary; /* Utilise le nouveau dégradé */
+}
+
+/* Création de composants personnalisés avec Tailwind */
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors;
+  }
+  
+  .card {
+    @apply bg-white p-6 rounded-lg shadow-md;
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(135deg, #21114E 0%, #A70069 50%, #21114E 100%);
+  background-size: 200% 200%;
+  animation: gradientAnimation 15s ease infinite;
+}

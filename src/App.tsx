@@ -6,6 +6,8 @@ import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
 import Settings from './pages/Settings';
 import Users from './pages/Users';
+import Courses from './pages/Courses';
+import Videos from './pages/Videos';
 
 // Composant pour les routes protégées
 const ProtectedRoute = ({ children }: { children: JSX.Element }) => {
@@ -45,6 +47,22 @@ const AppRoutes = () => {
         <ProtectedRoute>
           <MainLayout>
             <Users />
+          </MainLayout>
+        </ProtectedRoute>
+      } />
+      
+      <Route path="/cours" element={
+        <ProtectedRoute>
+          <MainLayout>
+            <Courses />
+          </MainLayout>
+        </ProtectedRoute>
+      } />
+      
+      <Route path="/video" element={
+        <ProtectedRoute>
+          <MainLayout>
+            <Videos />
           </MainLayout>
         </ProtectedRoute>
       } />

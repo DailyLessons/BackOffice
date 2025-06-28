@@ -5,6 +5,7 @@ import MainLayout from './layouts/MainLayout';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
 import Settings from './pages/Settings';
+import Users from './pages/Users';
 
 // Composant pour les routes protégées
 const ProtectedRoute = ({ children }: { children: JSX.Element }) => {
@@ -36,6 +37,14 @@ const AppRoutes = () => {
         <ProtectedRoute>
           <MainLayout>
             <Dashboard />
+          </MainLayout>
+        </ProtectedRoute>
+      } />
+      
+      <Route path="/users" element={
+        <ProtectedRoute>
+          <MainLayout>
+            <Users />
           </MainLayout>
         </ProtectedRoute>
       } />

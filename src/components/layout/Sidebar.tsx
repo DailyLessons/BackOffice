@@ -11,7 +11,7 @@ const Sidebar: React.FC = () => {
         <ul className="space-y-2">
           <li>
             <NavLink 
-              to="/" 
+              to="/dashboard" 
               className={({ isActive }: { isActive: boolean }) => 
                 `flex items-center p-3 rounded-lg transition-colors ${
                   isActive 

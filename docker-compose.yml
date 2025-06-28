@@ -15,4 +15,5 @@ services:
       - NODE_ENV=development
       - REACT_APP_SUPABASE_URL=https://tyrncmjvfrblogwwfpzc.supabase.co
       - REACT_APP_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR5cm5jbWp2ZnJibG9nd3dmcHpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk4NzA0MTcsImV4cCI6MjA1NTQ0NjQxN30.9oI1423XxZqsHDWOseFASJ-ReMxWASEgwmWEAu-O0zU
+      - REACT_APP_SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR5cm5jbWp2ZnJibG9nd3dmcHpjIiwicm9zZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczOTg3MDQxNywiZXhwIjoyMDU1NDQ2NDE3fQ.zycSfIJxwuV1lQGUYYm-nxLGMKrZVsCz50pvfJVI_WM
     command: npm start
